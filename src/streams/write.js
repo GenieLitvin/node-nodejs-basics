@@ -1,5 +1,8 @@
+import fs  from 'node:fs';
+const filePath = './src/streams/files/fileToWrite.txt';
+
 const write = async () => {
-    // Write your code here 
+    fs.createWriteStream(filePath).write('hello');
 };
 
 await write();
